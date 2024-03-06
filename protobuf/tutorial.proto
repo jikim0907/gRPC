@@ -1,0 +1,15 @@
+syntax = "proto3";
+ 
+package helloworld;
+ 
+service PingPongService {
+  rpc pingpong(Ping) returns (Pong) {}
+}
+ 
+message Ping {
+  uint32 count = 1;
+}
+ 
+message Pong {
+  uint32 count = 1;
+}
